@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tokyo Girls Website Demo</title>
+	<link rel="stylesheet" type="text/css" href="tokyo.css">
+
+</head>
+<body>
+	<div id="nav">Nav Bar is here</div>
+	<div id="wrapper">
+		<div class="main_pic">
+			<img src="img/main.jpg">
+		</div>
+		<div class="news">
+			<h3 class="to">news</h3>
+			<div class="news news_remaining" id="new_light"></div>
+		</div>
+	</div>
+	<div>
+		<a class="back2top" id="cloud" href=""></a>
+	</div>
+</body>
+	<script type="text/javascript">
+
+		var cloud = document.getElementById("cloud");
+
+		function showCloud() {
+			var y = window.scrollY;
+			console.log(y);
+			if ( y >= 50) { 
+				cloud.style.visibility = "visible";
+			} else {
+				cloud.style.visibility = "hidden";
+			}
+		}
+
+		cloud.addEventListener("click", function(){
+			console.log("uppp");
+			window.scrollTo(0,0);
+		});
+
+		window.addEventListener("scroll", showCloud);
+	</script>
+</html>
