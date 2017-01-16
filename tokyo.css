@@ -11,8 +11,8 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 1000px;
   min-width: 800px;
+  max-width: 1000px;
   width: 80%;
 }
 
@@ -21,13 +21,10 @@ body {
 }
 
 .news {
-  position: relative;
+  display: flex;
 }
 
-.news h3 {
-  position: absolute;
-  top: 0;
-  left: 0;
+.news .to {
   overflow: hidden;
   margin: 0;
   width: 154px;
@@ -37,9 +34,9 @@ body {
 }
 
 .news_remaining {
-  margin: 0 0 0 154px;
-  height: 36px;
   background: #ffffff;
+
+  flex-grow: 1;
 }
 
 .back2top {
