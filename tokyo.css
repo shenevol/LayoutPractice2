@@ -2,37 +2,21 @@ body {
   background: rgba(255,105,180,.8) 50% url(img/bg.png);
 }
 
-#wrapper {
-  width: 1000px;
-  margin: 0 auto;
-}
-
-.main_pic img {
-  width: 100%;
-}
-
-#nav {
+.navbar {
   height: 80px;
   color: #ffffff;
   text-align: center;
   line-height: 80px;
 }
 
-/*
-.news {
-    border:1px solid black;
-    width: 154px;
-    height: 36px;
-    overflow: hidden;
-    float:left;
+.wrapper {
+  margin: 0 auto;
+  width: 1000px;
 }
 
-.news_remaining {
-    overflow: hidden;
-    height: 36px;
-    background: #fff;
-    border: 1px solid black;
-}*/
+.main_pic img {
+  width: 100%;
+}
 
 .news h3 {
   position: absolute;
