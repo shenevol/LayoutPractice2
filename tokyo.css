@@ -11,15 +11,23 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  width: 1000px;
+  max-width: 1000px;
+  min-width: 800px;
+  width: 80%;
 }
 
 .main_pic img {
   width: 100%;
 }
 
+.news {
+  position: relative;
+}
+
 .news h3 {
   position: absolute;
+  top: 0;
+  left: 0;
   overflow: hidden;
   margin: 0;
   width: 154px;
