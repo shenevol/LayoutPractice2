@@ -34,6 +34,8 @@ body {
 }
 
 .news ul {
+  margin: 0 ;
+  overflow: hidden;
 }
 
 .news ul li {
@@ -45,13 +47,15 @@ body {
   position: relative;
   display: block !important;
   width: 100%;
+  line-height: 36px;
 }
 
 .news_remaining {
   background: #ffffff;
-
   flex-grow: 1;
 }
+
+
 
 .back2top {
   position: fixed;

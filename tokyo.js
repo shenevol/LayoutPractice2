@@ -27,17 +27,20 @@ window.addEventListener('scroll', showCloud);
 
 var showNews = document.getElementsByClassName("news-feed")[0];
 var rightShift = 0;
+var movemont = 10;
 
 function moveNews(){    
-    if(rightShift > 200){
+    if(rightShift > 180){
         return;
     }
     var newfeedStyle = window.getComputedStyle(showNews).getPropertyValue('right');
-    rightShift += 20;
+    rightShift += movemont;
+    movemont = movemont * 1.5;
     right = rightShift.toString() +'px';
     showNews.style.setProperty('right', right);
-    console.log("move");
-    setTimeout(moveNews, 30);
+    setTimeout(moveNews, 80);
 }
 
-setTimeout(moveNews, 5000);
+
+
+setTimeout(moveNews, 7000);
