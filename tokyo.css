@@ -33,6 +33,20 @@ body {
   text-indent: 100%;
 }
 
+.news ul {
+}
+
+.news ul li {
+   float:left;
+   display: none; 
+}
+
+.news-feed{
+  position: relative;
+  display: block !important;
+  width: 100%;
+}
+
 .news_remaining {
   background: #ffffff;
 
