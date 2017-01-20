@@ -31,6 +31,8 @@ var nextNewsFrame = document.getElementsByClassName("next-news-feed")[0];
 
 function updateNewsFeed(){
     newsFrame.innerHTML = news[newsIndex % news.length];
+    newsIndex++;
+    nextNewsFrame.innerHTML = news[newsIndex % news.length];
     setTimeout(moveNewsFeed, 5000);
 }
 
