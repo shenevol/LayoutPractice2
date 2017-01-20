@@ -22,6 +22,7 @@ body {
 
 .news {
   display: flex;
+
 }
 
 .news .to {
@@ -36,26 +37,58 @@ body {
 .news ul {
   margin: 0 ;
   overflow: hidden;
-}
-
-.news ul li {
-   float:left;
-   display: none; 
-}
-
-.news-feed{
-  position: relative;
-  display: block !important;
+  border: 1px solid red;
   width: 100%;
-  line-height: 36px;
+  list-style-type: none;
+  height: 36px;
 }
 
-.news_remaining {
+.news ul li{
+   float: left;
+   border: 1px solid black;
+   line-height: 36px;
+   visibility: hidden;
+   width: 100%;
+}
+
+.news-feed {
+  display: inline-block;
+  line-height: 36px;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 16px;
+  position: relative;
+  padding-left: 18px;
+}
+
+.now-news-feed {
+  right: 0px;
+  transition: 0.5s ease-in-out;
+  xpadding-left: 18px;
+}
+
+.next-news-feed{
+  transition: 3s ease-in-out;
+  right:0px;
+}
+
+.next-news-feed.move-in{
+  right: 100%;
+}
+
+.now-news-feed.move-out {
+  right: 200px;
+}
+
+.news_container {
   background: #ffffff;
   flex-grow: 1;
+  overflow: hidden;
+  height: 36px;
+  white-space: nowrap;
+  font-size: 0px;
+  box-sizing: border-box;
 }
-
-
 
 .back2top {
   position: fixed;

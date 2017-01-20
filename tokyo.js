@@ -1,4 +1,6 @@
 var cloud = document.getElementById('cloud');
+var news  = ["2017/1/15 Steamed buns","2017/1/16 Luwei","2017/1/17 Salad Boat"];
+
 
 function showCloud() {
     var y = window.scrollY;
@@ -23,24 +25,33 @@ function scrollToTop() {
 
 cloud.addEventListener('click', scrollToTop);
 window.addEventListener('scroll', showCloud);
+var newsIndex = 0;
+var newsFrame = document.getElementsByClassName("now-news-feed")[0];
+var nextNewsFrame = document.getElementsByClassName("next-news-feed")[0];
 
-
-var showNews = document.getElementsByClassName("news-feed")[0];
-var rightShift = 0;
-var movemont = 10;
-
-function moveNews(){    
-    if(rightShift > 180){
-        return;
-    }
-    var newfeedStyle = window.getComputedStyle(showNews).getPropertyValue('right');
-    rightShift += movemont;
-    movemont = movemont * 1.5;
-    right = rightShift.toString() +'px';
-    showNews.style.setProperty('right', right);
-    setTimeout(moveNews, 80);
+function updateNewsFeed(){
+    newsFrame.innerHTML = news[newsIndex % news.length];
+    setTimeout(moveNewsFeed, 5000);
 }
 
+function moveNewsFeed(){
+     newsFrame.classList.add("move-out");
+     // setTimeout( function ( ){
+     //    newsFrame.parentNode.removeChild(newsFrame);},
+     // 50);
+     nextNewsFrame.classList.add("move-in");
+    
+    // newsFrame.classList.remove("now-news-feed");
+}
+// xsetTimeout(function(){  
+//     showNews.classList.add("moving");
+//     console.log(showNews.nextSibling);
+//     showNews.classList.remove("news-feed");
+
+// }, 5000);
+
+updateNewsFeed();
 
 
-setTimeout(moveNews, 7000);
+
+//setTimeout(moveNews, 7000);
