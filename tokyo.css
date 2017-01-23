@@ -22,7 +22,6 @@ body {
 
 .news {
   display: flex;
-
 }
 
 .news .to {
@@ -34,21 +33,23 @@ body {
   text-indent: 100%;
 }
 
-.news ul {
-  margin: 0 ;
+.news-frame {
   overflow: hidden;
-  border: 1px solid red;
-  width: 100%;
-  list-style-type: none;
-  height: 36px;
+  background: #ffffff;
+  flex-grow: 1;
+  box-sizing: border-box;
 }
 
-.news ul li{
-   float: left;
-   border: 1px solid black;
-   line-height: 36px;
-   visibility: hidden;
-   width: 100%;
+.news-container {
+  white-space: nowrap;
+  font-size: 0px;
+  position: relative;
+  left: 0px;
+}
+
+.news-container.moving {
+  left: -100%;
+  transition: left 0.5s ease-out;
 }
 
 .news-feed {
@@ -61,35 +62,86 @@ body {
   padding-left: 18px;
 }
 
-.now-news-feed {
-  right: 0px;
-  transition: 0.5s ease-in-out;
-  xpadding-left: 18px;
+.content {
+  display: flex;
+  margin-top: 10px;
 }
 
-.next-news-feed{
-  transition: 3s ease-in-out;
-  right:0px;
+.ad {
+  flex-grow: 1;
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
 }
 
-.next-news-feed.move-in{
-  right: 100%;
-}
-
-.now-news-feed.move-out {
-  right: 200px;
-}
-
-.news_container {
-  background: #ffffff;
+.real-content {
   flex-grow: 1;
   overflow: hidden;
-  height: 36px;
-  white-space: nowrap;
-  font-size: 0px;
-  box-sizing: border-box;
+ 
 }
 
+.real-content ul {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 0;
+  max-width: 646px;
+  min-width: 450px;
+
+}
+
+.real-content ul li {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 23.4%;
+  height: 49%;
+  margin-right: 2%;
+}
+
+.real-content ul li.first-row{
+   margin-bottom: 1%;
+}
+.real-content ul li.nav_sake{
+  background: url(img/smimg/nav_sake-img.png);  
+  background-size: cover;
+}
+
+.real-content ul li.nav_tower {
+  background: url(img/smimg/nav_tower-img.png);  
+  background-size: cover;
+}
+
+.real-content ul li.nav_love {
+  background: url(img/smimg/nav_love-img.png);  
+  background-size: cover;
+}
+
+.real-content ul li.nav_cast {
+  margin-right: 0%;
+  background: url(img/smimg/nav_cast-img.png); 
+  background-size: cover;
+} 
+
+.real-content ul li.nav_original {
+  background: url(img/smimg/nav_original-img.png); 
+  background-size: cover;
+}
+
+.real-content ul li.nav_music {
+  background: url(img/smimg/nav_music-img.png); 
+  background-size: cover;
+}
+.real-content ul li.nav_beer {
+  background: url(img/smimg/nav_beer-img.png); 
+  background-size: cover;
+}
+.real-content ul li.nav_tv {
+  margin-right: 0%;
+  background: url(img/smimg/nav_tv-img.png); 
+  background-size: cover;
+}
 .back2top {
   position: fixed;
   right: 40px;

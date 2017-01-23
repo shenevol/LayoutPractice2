@@ -1,6 +1,7 @@
 var cloud = document.getElementById('cloud');
 var news  = ["2017/1/15 Steamed buns","2017/1/16 Luwei","2017/1/17 Salad Boat"];
-
+var newsIndex = 0;
+var newsContainer = document.getElementsByClassName("news-container")[0];
 
 function showCloud() {
     var y = window.scrollY;
@@ -25,35 +26,33 @@ function scrollToTop() {
 
 cloud.addEventListener('click', scrollToTop);
 window.addEventListener('scroll', showCloud);
-var newsIndex = 0;
-var newsFrame = document.getElementsByClassName("now-news-feed")[0];
-var nextNewsFrame = document.getElementsByClassName("next-news-feed")[0];
+
+function initialize(){
+    newsContainer.children[0].innerHTML = news[newsIndex];
+    newsIndex = (newsIndex + 1) % news.length;
+    newsContainer.children[1].innerHTML = news[newsIndex];
+}
+
+initialize();
 
 function updateNewsFeed(){
-    newsFrame.innerHTML = news[newsIndex % news.length];
-    newsIndex++;
-    nextNewsFrame.innerHTML = news[newsIndex % news.length];
-    setTimeout(moveNewsFeed, 5000);
+    var newNode = document.createElement("div");
+    newsIndex = (newsIndex + 1) % news.length;
+    newNode.innerHTML = news[newsIndex];
+    newNode.classList.add("news-feed");
+    newsContainer.appendChild(newNode);
 }
 
 function moveNewsFeed(){
-     newsFrame.classList.add("move-out");
-     // setTimeout( function ( ){
-     //    newsFrame.parentNode.removeChild(newsFrame);},
-     // 50);
-     nextNewsFrame.classList.add("move-in");
-    
-    // newsFrame.classList.remove("now-news-feed");
+    newsContainer.classList.add("moving");
+    setTimeout( function(){
+        newsContainer.classList.remove("moving");
+        newsContainer.removeChild(newsContainer.children[0]);
+    }, 500);
 }
-// xsetTimeout(function(){  
-//     showNews.classList.add("moving");
-//     console.log(showNews.nextSibling);
-//     showNews.classList.remove("news-feed");
-
-// }, 5000);
-
-updateNewsFeed();
 
 
-
-//setTimeout(moveNews, 7000);
+setInterval(function(){
+    moveNewsFeed();
+    updateNewsFeed();
+}, 3000);
