@@ -299,33 +299,32 @@ body {
   margin-top: 40px;
   width: 157px;
   height: 132px;
-  background: url("img/icon/line_bg.png");
+  background-image: url("img/icon/line_bg.png");
 }
 
 .instagram {
-  height: 300px;
+  position: relative;
+  overflow: hidden;
+  padding: 25px 20px 20px 20px;
+  min-height: 300px;
   background-color: #ffffff;
 }
 
-.instagram h3 {
-  float: left;
-  margin: 0 ;
+.instagram .icon {
+  margin: 0;
   padding: 0;
   width: 287px;
   height: 35px;
-  background: url(img/icon/insta_h3.png) no-repeat;
-}
-
-.insta_div {
-  overflow: hidden;
-  padding: 25px 20px 20px 20px;
+  background-image: url("img/icon/insta_h3.png");
 }
 
 .insta_btn {
-  float: right;
-  width: 160px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 154px;
   height: 40px;
-  background: url(img/icon/insta_btn.png) no-repeat;
+  background-image: url("img/icon/insta_btn.png");
 }
 
 .back2top {
