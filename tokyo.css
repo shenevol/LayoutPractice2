@@ -40,7 +40,7 @@ body {
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
-  background: #ffffff;
+  background-color: #ffffff;
 
   flex-grow: 1;
 }
@@ -70,8 +70,8 @@ body {
 .container {
   display: flex;
   margin-top: 20px;
-  max-width: 1024px;
   min-width: 600px;
+  max-width: 1024px;
 }
 
 .ad {
@@ -171,33 +171,33 @@ body {
 }
 
 .nav_tv:hover {
-  background: url(img/gif/nav_tv.gif);
+  background-image: url(img/gif/nav_tv.gif);
 }
 
 .banner {
   margin-top: 20px;
-  width: 100%;
   padding-bottom: 25.3%;
-  background: url("img/icon/banner.jpg");
+  width: 100%;
+  background-image: url("img/icon/banner.jpg");
   background-size: cover;
 }
 
 .episode_update {
   overflow: hidden;
-  margin-top: 5%;
-  height: 975px;
-  background: url(img/icon/movie_bg.png) ;
+  margin-top: 20px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-image: url(img/icon/movie_bg.png);
+  background-size: cover;
 }
 
 .epi_div {
+  position: relative;
   box-sizing: border-box;
-  padding-top: 57px;
-  height: 430px;
 }
 
 .epi_div.story {
   padding-top: 50px;
-  height: 440px;
 }
 
 .epi_tab {
@@ -205,7 +205,7 @@ body {
   width: 100%;
 }
 
-.epi_tab h3 {
+.epi_tab .tab-title {
   float: left;
   margin: 0;
   padding: 0;
@@ -213,43 +213,46 @@ body {
   text-indent: -100%;
 }
 
-.epi_tab h3.pr {
-  width: 30%;
-  background: url(img/icon/movie_h3.png) no-repeat;
-}
-
-.epi_tab h3.story {
-  width: 35%;
-  background: url(img/icon/story_h3.png) no-repeat;
-}
-
-.pic {
-  position: relative;
-  top: -20px;
-  left: 40px;
-  max-width: 646px;
-  height: 440px;
-  background: url(img/icon/top-img.png) no-repeat;
-  background-size: 88%;
+.epi_tab .pr {
+  width: 187px;
+  height: 37px;
+  background-image: url("img/icon/movie_h3.png");
 }
 
 .pr_button {
-  position: relative;
-  top: -2px;
-  left: 75%;
-  width: 160px;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  width: 128px;
   height: 40px;
-  background: url(img/icon/movie_btn.png) no-repeat;
+  background-image: url("img/icon/movie_btn.png");
 }
 
 .pr_button:hover {
-  opacity: .5;
+  opacity: .7;
+  cursor: pointer;
+}
+
+.epi_tab .story {
+  width: 221px;
+  height: 36px;
+  background-image: url("img/icon/story_h3.png");
+}
+
+.epi_div .viewport {
+  padding: 0 60px;
+}
+
+.pic {
+  padding-bottom: 69.7%;
+  background-image: url("img/icon/top-img.png");
+  background-size: cover;
 }
 
 .pr_tv {
   margin: 20px 10% 0 10%;
   height: 310px;
-  background: url(http://placehold.it/350x200);
+  background-image: url(http://placehold.it/350x200);
   background-size: cover;
 }
 
@@ -260,7 +263,7 @@ body {
 
 .twitter {
   padding: 15px 20px 20px 20px;
-  background: #2fcce9;
+  background-color: #2fcce9;
 
   flex-grow: 1;
 }
@@ -283,7 +286,7 @@ body {
 
 .line {
   padding: 20px 15px 20px 15px;
-  background: #00b900;
+  background-color: #00b900;
 }
 
 .qr {
@@ -303,7 +306,7 @@ body {
 
 .instagram {
   height: 300px;
-  background: #ffffff;
+  background-color: #ffffff;
 }
 
 .instagram h3 {
