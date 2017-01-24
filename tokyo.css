@@ -27,16 +27,17 @@ body {
   display: flex;
 }
 
-.news .to {
+.news-title {
   overflow: hidden;
   margin: 0;
   width: 154px;
   height: 36px;
-  background: url(img/news_icon.png) no-repeat;
+  background: url("img/news_icon.png") no-repeat;
   text-indent: 100%;
 }
 
 .news-frame {
+  position: relative;
   overflow: hidden;
   box-sizing: border-box;
   background: #ffffff;
@@ -45,8 +46,9 @@ body {
 }
 
 .news-container {
-  position: relative;
+  position: absolute;
   left: 0;
+  width: 100%;
   white-space: nowrap;
   font-size: 0;
 }
@@ -57,7 +59,6 @@ body {
 }
 
 .news-feed {
-  position: relative;
   display: inline-block;
   box-sizing: border-box;
   padding-left: 18px;
