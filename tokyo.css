@@ -67,34 +67,24 @@ body {
   line-height: 36px;
 }
 
-.content {
+.container {
   display: flex;
   margin-top: 20px;
+  max-width: 1024px;
+  min-width: 600px;
 }
 
 .ad {
   box-sizing: border-box;
-  margin: auto 0 auto 0;
   width: 154px;
   text-align: center;
 }
 
-.real-content {
+.content {
   flex-grow: 1;
 }
 
-.introduce {
-  overflow: hidden;
-  min-width: 450px;
-  min-height: 300px;
-  max-height: 700px;
-  width: 100%;
-
-  xmax-width: 646px;
-}
-
-
-.introduce ul {
+.intro-container {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -112,12 +102,18 @@ body {
   background-size: cover;
 }
 
-.first-row {
+.intro-item.first-row {
   margin-bottom: 1%;
 }
+
+.intro-item.fourth-item {
+  margin-right: 0;
+}
+
 .nav_sake {
   background-image: url(img/smimg/nav_sake-img.png);
 }
+
 .nav_sake:hover {
   background-image: url(img/gif/nav_sake.gif);
 }
@@ -139,12 +135,10 @@ body {
 }
 
 .nav_cast {
-  margin-right: 0;
   background-image: url(img/smimg/nav_cast-img.png);
 }
 
 .nav_cast:hover {
-  margin-right: 0;
   background-image: url(img/gif/nav_cast.gif);
 }
 
@@ -163,18 +157,20 @@ body {
 .nav_music:hover {
   background-image: url(img/gif/nav_music.gif);
 }
+
 .nav_beer {
   background-image: url(img/smimg/nav_beer-img.png);
 }
+
 .nav_beer:hover {
   background-image: url(img/gif/nav_beer.gif);
 }
+
 .nav_tv {
-  margin-right: 0;
   background-image: url(img/smimg/nav_tv-img.png);
 }
+
 .nav_tv:hover {
-  margin-right: 0;
   background: url(img/gif/nav_tv.gif);
 }
 
