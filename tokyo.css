@@ -38,31 +38,32 @@ body {
 
 .news-frame {
   overflow: hidden;
-  background: #ffffff;
-  flex-grow: 1;
   box-sizing: border-box;
+  background: #ffffff;
+
+  flex-grow: 1;
 }
 
 .news-container {
-  white-space: nowrap;
-  font-size: 0px;
   position: relative;
-  left: 0px;
+  left: 0;
+  white-space: nowrap;
+  font-size: 0;
 }
 
 .news-container.moving {
   left: -100%;
-  transition: left 0.5s ease-out;
+  transition: left .5s ease-out;
 }
 
 .news-feed {
+  position: relative;
   display: inline-block;
-  line-height: 36px;
   box-sizing: border-box;
+  padding-left: 18px;
   width: 100%;
   font-size: 16px;
-  position: relative;
-  padding-left: 18px;
+  line-height: 36px;
 }
 
 .content {
@@ -71,9 +72,9 @@ body {
 
 .ad {
   box-sizing: border-box;
-  text-align: center;
   margin: auto 0 auto 0;
   width: 154px;
+  text-align: center;
 }
 
 .real-content {
@@ -81,128 +82,114 @@ body {
 }
 
 .introduce {
+  overflow: hidden;
+  min-width: 450px;
   min-height: 300px;
   max-height: 700px;
-  overflow: hidden;
-  xmax-width: 646px;
-  min-width: 450px;
   width: 100%;
+
+  xmax-width: 646px;
 }
 
 
 .introduce ul {
   box-sizing: border-box;
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
   font-size: 0;
 }
 
 .introduce ul li {
-  box-sizing: border-box;
   display: inline-block;
-  width: 23.5%;
-  padding-bottom: 23.5%;
-  height: 0;
+  box-sizing: border-box;
   margin-right: 2%;
+  padding-bottom: 23.5%;
+  width: 23.5%;
+  height: 0;
+  background-size: cover;
 }
 
-.introduce ul li.first-row{
-   margin-bottom: 1%;
+.introduce ul li.first-row {
+  margin-bottom: 1%;
 }
-.introduce ul li.nav_sake{
-  background: url(img/smimg/nav_sake-img.png); 
-  background-size: cover; 
+.introduce ul li.nav_sake {
+  background-image: url(img/smimg/nav_sake-img.png);
 }
 .introduce ul li.nav_sake:hover {
-  background: url(img/gif/nav_sake.gif);  
-  background-size: cover;
+  background-image: url(img/gif/nav_sake.gif);
 }
 
 .introduce ul li.nav_tower {
-  background: url(img/smimg/nav_tower-img.png);  
-  background-size: cover;
+  background-image: url(img/smimg/nav_tower-img.png);
 }
 
 .introduce ul li.nav_tower:hover {
-  background: url(img/gif/nav_tower.gif);  
-  background-size: cover;
+  background-image: url(img/gif/nav_tower.gif);
 }
 
 .introduce ul li.nav_love {
-  background: url(img/smimg/nav_love-img.png);  
-  background-size: cover;
+  background-image: url(img/smimg/nav_love-img.png);
 }
 
 .introduce ul li.nav_love:hover {
-  background: url(img/gif/nav_love.gif);  
-  background-size: cover;
+  background-image: url(img/gif/nav_love.gif);
 }
 
 .introduce ul li.nav_cast {
-  margin-right: 0%;
-  background: url(img/smimg/nav_cast-img.png); 
-  background-size: cover;
-} 
+  margin-right: 0;
+  background-image: url(img/smimg/nav_cast-img.png);
+}
 
 .introduce ul li.nav_cast:hover {
-  margin-right: 0%;
-  background: url(img/gif/nav_cast.gif); 
-  background-size: cover;
+  margin-right: 0;
+  background-image: url(img/gif/nav_cast.gif);
 }
 
 .introduce ul li.nav_original {
-  background: url(img/smimg/nav_original-img.png); 
-  background-size: cover;
+  background-image: url(img/smimg/nav_original-img.png);
 }
 
 .introduce ul li.nav_original:hover {
-  background: url(img/gif/nav_original.gif); 
-  background-size: cover;
+  background-image: url(img/gif/nav_original.gif);
 }
 
 .introduce ul li.nav_music {
-  background: url(img/smimg/nav_music-img.png); 
-  background-size: cover;
+  background-image: url(img/smimg/nav_music-img.png);
 }
 
 .introduce ul li.nav_music:hover {
-  background: url(img/gif/nav_music.gif); 
-  background-size: cover;
+  background-image: url(img/gif/nav_music.gif);
 }
 .introduce ul li.nav_beer {
-  background: url(img/smimg/nav_beer-img.png); 
-  background-size: cover;
+  background-image: url(img/smimg/nav_beer-img.png);
 }
 .introduce ul li.nav_beer:hover {
-  background: url(img/gif/nav_beer.gif); 
-  background-size: cover;
+  background-image: url(img/gif/nav_beer.gif);
 }
 .introduce ul li.nav_tv {
-  margin-right: 0%;
-  background: url(img/smimg/nav_tv-img.png); 
-  background-size: cover;
+  margin-right: 0;
+  background-image: url(img/smimg/nav_tv-img.png);
 }
 .introduce ul li.nav_tv:hover {
-  margin-right: 0%;
-  background: url(img/gif/nav_tv.gif); 
-  background-size: cover;
+  margin-right: 0;
+  background: url(img/gif/nav_tv.gif);
 }
 
 
 .tv_add {
+  min-height: 170px;
+  width: 100%;
+  height: 15vw;
   background: url(img/icon/tv_add.jpg);
   background-size: cover;
-  width: 100%;
-  min-height: 170px;
-  height: 15vw;
 }
 
 .episode_update {
-  background: url(img/icon/movie_bg.png) ;
-  height: 975px;
   overflow: hidden;
   margin-top: 5%;
+  height: 975px;
+  background: url(img/icon/movie_bg.png) ;
 }
 
 .epi_div {
@@ -212,61 +199,61 @@ body {
 }
 
 .epi_div.story {
-  height: 440px;
   padding-top: 50px;
+  height: 440px;
 }
 
 .epi_tab {
-  width: 100%;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .epi_tab h3 {
-  margin:0;
-  padding: 0;  
-  text-indent: -100%;
-  height: 37px;
   float: left;
+  margin: 0;
+  padding: 0;
+  height: 37px;
+  text-indent: -100%;
 }
 
 .epi_tab h3.pr {
-  background: url(img/icon/movie_h3.png) no-repeat;
   width: 30%;
+  background: url(img/icon/movie_h3.png) no-repeat;
 }
 
 .epi_tab h3.story {
-  background: url(img/icon/story_h3.png) no-repeat;
   width: 35%;
+  background: url(img/icon/story_h3.png) no-repeat;
 }
 
-.pic{
-  max-width: 646px;
-  height: 440px;
+.pic {
   position: relative;
   top: -20px;
   left: 40px;
+  max-width: 646px;
+  height: 440px;
   background: url(img/icon/top-img.png) no-repeat;
   background-size: 88%;
 }
 
-.pr_button{
-  background: url(img/icon/movie_btn.png) no-repeat;
-  height: 40px;
-  width: 160px;
+.pr_button {
   position: relative;
-  left: 75%;
   top: -2px;
+  left: 75%;
+  width: 160px;
+  height: 40px;
+  background: url(img/icon/movie_btn.png) no-repeat;
 }
 
-.pr_button:hover{
-  opacity: 0.5;
+.pr_button:hover {
+  opacity: .5;
 }
 
 .pr_tv {
+  margin: 20px 10% 0 10%;
+  height: 310px;
   background: url(http://placehold.it/350x200);
   background-size: cover;
-  height: 310px;
-  margin: 20px 10% 0 10%;
 }
 
 .social {
@@ -275,71 +262,72 @@ body {
 }
 
 .twitter {
-  background: #2fcce9;
-  flex-grow: 1;
   padding: 15px 20px 20px 20px;
+  background: #2fcce9;
+
+  flex-grow: 1;
 }
 
-.twitter h3{
-  background: url(img/icon/twitter_h3.png) no-repeat;
+.twitter h3 {
   float: left;
   width: 160px;
   height: 40px;
+  background: url(img/icon/twitter_h3.png) no-repeat;
   text-indent: 120%;
 }
 
 .tw_btn {
-  background: url(img/icon/twitter_btn.png) no-repeat;
-  width: 160px;
-  height: 40px;
   float: right;
   margin-top: 20px;
+  width: 160px;
+  height: 40px;
+  background: url(img/icon/twitter_btn.png) no-repeat;
 }
 
 .line {
-  background: #00b900;
   padding: 20px 15px 20px 15px;
+  background: #00b900;
 }
 
 .qr {
-  background: url(img/icon/line_btn.png) no-repeat;
-  background-position: 10% 95.5%;
   width: 157px;
   height: 230px;
+  background: url(img/icon/line_btn.png) no-repeat;
+  background-position: 10% 95.5%;
 }
 
 
 .line_img {
-  background: url(img/icon/line_bg.png) no-repeat;
+  margin-top: 40px;
   width: 157px;
   height: 132px;
-  margin-top: 40px;
+  background: url(img/icon/line_bg.png) no-repeat;
 }
 
 .instagram {
-  background: #ffffff;
   height: 300px;
+  background: #ffffff;
 }
 
-.instagram h3{
-  margin:0 ;
-  padding: 0;
+.instagram h3 {
   float: left;
-  background: url(img/icon/insta_h3.png) no-repeat;
-  height: 35px;
+  margin: 0 ;
+  padding: 0;
   width: 287px;
+  height: 35px;
+  background: url(img/icon/insta_h3.png) no-repeat;
 }
 
 .insta_div {
-  padding: 25px 20px 20px 20px;
   overflow: hidden;
+  padding: 25px 20px 20px 20px;
 }
 
 .insta_btn {
-  background: url(img/icon/insta_btn.png) no-repeat;
+  float: right;
   width: 160px;
   height: 40px;
-  float: right;
+  background: url(img/icon/insta_btn.png) no-repeat;
 }
 
 .back2top {
