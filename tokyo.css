@@ -262,46 +262,44 @@ body {
 }
 
 .twitter {
+  position: relative;
   padding: 15px 20px 20px 20px;
   background-color: #2fcce9;
 
   flex-grow: 1;
 }
 
-.twitter h3 {
-  float: left;
-  width: 160px;
+.twitter .icon {
+  width: 161px;
   height: 40px;
-  background: url(img/icon/twitter_h3.png) no-repeat;
-  text-indent: 120%;
+  background-image: url("img/icon/twitter_h3.png");
 }
 
 .tw_btn {
-  float: right;
-  margin-top: 20px;
+  position: absolute;
+  top: 36px;
+  right: 36px;
   width: 160px;
   height: 40px;
-  background: url(img/icon/twitter_btn.png) no-repeat;
+  background-image: url("img/icon/twitter_btn.png");
 }
 
 .line {
-  padding: 20px 15px 20px 15px;
+  padding: 20px 15px;
   background-color: #00b900;
 }
 
 .qr {
-  width: 157px;
-  height: 230px;
-  background: url(img/icon/line_btn.png) no-repeat;
-  background-position: 10% 95.5%;
+  width: 165px;
+  height: 243px;
+  background: url("img/icon/line_btn.png") no-repeat 0 -282px;
 }
-
 
 .line_img {
   margin-top: 40px;
   width: 157px;
   height: 132px;
-  background: url(img/icon/line_bg.png) no-repeat;
+  background: url("img/icon/line_bg.png");
 }
 
 .instagram {
