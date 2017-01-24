@@ -2,9 +2,6 @@ body {
   background: rgba(255,105,180,.8) 50% url(img/bg.png);
 }
 
-.top-10 {
-  margin-top: 20px;
-}
 .navbar {
   height: 80px;
   color: #ffffff;
@@ -68,6 +65,7 @@ body {
 
 .content {
   display: flex;
+  margin-top: 20px;
 }
 
 .ad {
@@ -100,7 +98,7 @@ body {
   font-size: 0;
 }
 
-.introduce ul li {
+.intro-item {
   display: inline-block;
   box-sizing: border-box;
   margin-right: 2%;
@@ -110,74 +108,75 @@ body {
   background-size: cover;
 }
 
-.introduce ul li.first-row {
+.first-row {
   margin-bottom: 1%;
 }
-.introduce ul li.nav_sake {
+.nav_sake {
   background-image: url(img/smimg/nav_sake-img.png);
 }
-.introduce ul li.nav_sake:hover {
+.nav_sake:hover {
   background-image: url(img/gif/nav_sake.gif);
 }
 
-.introduce ul li.nav_tower {
+.nav_tower {
   background-image: url(img/smimg/nav_tower-img.png);
 }
 
-.introduce ul li.nav_tower:hover {
+.nav_tower:hover {
   background-image: url(img/gif/nav_tower.gif);
 }
 
-.introduce ul li.nav_love {
+.nav_love {
   background-image: url(img/smimg/nav_love-img.png);
 }
 
-.introduce ul li.nav_love:hover {
+.nav_love:hover {
   background-image: url(img/gif/nav_love.gif);
 }
 
-.introduce ul li.nav_cast {
+.nav_cast {
   margin-right: 0;
   background-image: url(img/smimg/nav_cast-img.png);
 }
 
-.introduce ul li.nav_cast:hover {
+.nav_cast:hover {
   margin-right: 0;
   background-image: url(img/gif/nav_cast.gif);
 }
 
-.introduce ul li.nav_original {
+.nav_original {
   background-image: url(img/smimg/nav_original-img.png);
 }
 
-.introduce ul li.nav_original:hover {
+.nav_original:hover {
   background-image: url(img/gif/nav_original.gif);
 }
 
-.introduce ul li.nav_music {
+.nav_music {
   background-image: url(img/smimg/nav_music-img.png);
 }
 
-.introduce ul li.nav_music:hover {
+.nav_music:hover {
   background-image: url(img/gif/nav_music.gif);
 }
-.introduce ul li.nav_beer {
+.nav_beer {
   background-image: url(img/smimg/nav_beer-img.png);
 }
-.introduce ul li.nav_beer:hover {
+.nav_beer:hover {
   background-image: url(img/gif/nav_beer.gif);
 }
-.introduce ul li.nav_tv {
+.nav_tv {
   margin-right: 0;
   background-image: url(img/smimg/nav_tv-img.png);
 }
-.introduce ul li.nav_tv:hover {
+.nav_tv:hover {
   margin-right: 0;
   background: url(img/gif/nav_tv.gif);
 }
 
 
 .tv_add {
+  margin-top: 20px;
   min-height: 170px;
   width: 100%;
   height: 15vw;
