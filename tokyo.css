@@ -16,8 +16,11 @@ body {
   width: 80%;
 }
 
-.main_pic img {
-  width: 100%;
+.main_pic {
+  margin-bottom: 10px;
+  padding-bottom: 51%;
+  background-image: url("img/main.jpg");
+  background-size: cover;
 }
 
 .news {
